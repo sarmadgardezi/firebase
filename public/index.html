@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarmad Gardezi - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="font-bold text-xl">Sarmad Gardezi</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#portfolio" class="hover:text-gray-300">Portfolio</a></li>
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                <li><button id="login-button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none focus:shadow-outline">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="px-4 py-2">
+                <li><a href="#home" class="block py-2 hover:bg-gray-700">Home</a></li>
+                <li><a href="#portfolio" class="block py-2 hover:bg-gray-700">Portfolio</a></li>
+                <li><a href="#about" class="block py-2 hover:bg-gray-700">About</a></li>
+                <li><a href="#contact" class="block py-2 hover:bg-gray-700">Contact</a></li>
+                <li><button id="login-button-mobile" class="block py-2 hover:bg-gray-700 text-left w-full">Login</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with User Details and Photo -->
+    <header id="home" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <img src="https://sarmadgardezi.com/images/logo/sarmadgardezilogo.webp" width="120" alt="Sarmad Gardezi" class="rounded-full mx-auto mb-4 shadow-lg">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Sarmad Gardezi</h1>
+            <p class="text-gray-600 text-lg">Full Stack Developer</p>
+            <p class="text-gray-600 text-lg">Passionate about creating beautiful and functional websites and applications.</p>
+            <div class="mt-8">
+                <a href="#portfolio" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Portfolio</a>
+                <a href="#contact" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ml-4">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/49f28e189617081.Y3JvcCwxMDA2LDc4NywxOTYsMA.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Project Title 1</h3>
+                        <p class="text-gray-600 text-sm">Short description of project 1. Technologies used, etc.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/49f28e189617081.Y3JvcCwxMDA2LDc4NywxOTYsMA.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Project Title 2</h3>
+                        <p class="text-gray-600 text-sm">Short description of project 2. Technologies used, etc.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/49f28e189617081.Y3JvcCwxMDA2LDc4NywxOTYsMA.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Project Title 3</h3>
+                        <p class="text-gray-600 text-sm">Short description of project 3. Technologies used, etc.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-left">
+                <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="text-gray-700 mb-6">I have been working as a web developer for the past 5 years, specializing in front-end technologies like HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS. I also have experience in UI/UX design, focusing on creating user-centered and accessible designs.</p>
+                <p class="text-gray-700">My goal is to help businesses and individuals create a strong online presence through effective and visually appealing web solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Contact Me</h2>
+            <p class="text-gray-700 mb-8">Feel free to reach out if you have any questions or project inquiries!</p>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>© 2023 Sarmad Gardezi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                Login
+                            </h3>
+                            <div class="mt-2">
+                                <form id="login-form" class="space-y-4">
+                                    <div>
+                                        <input type="email" id="login-email" placeholder="Email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </div>
+                                    <div>
+                                        <input type="password" id="login-password" placeholder="Password" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </div>
+                                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Login</button>
+                                </form>
+                                <p class="mt-2 text-sm text-gray-500">Don't have an account? <a href="signup.html" class="text-blue-500 hover:text-blue-700">Sign Up</a></p>
+                                <p id="login-error" class="text-red-500 text-sm"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button id="close-modal-button" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loginModal = document.getElementById('login-modal');
+        const loginButton = document.getElementById('login-button');
+        const loginButtonMobile = document.getElementById('login-button-mobile');
+        const closeModalButton = document.getElementById('close-modal-button');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        loginButton.addEventListener('click', () => {
+            loginModal.classList.remove('hidden');
+        });
+        loginButtonMobile.addEventListener('click', () => {
+            loginModal.classList.remove('hidden');
+            mobileMenu.classList.add('hidden'); // Close mobile menu when login is clicked
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            loginModal.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == loginModal) {
+                loginModal.classList.add('hidden');
+            }
+        });
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+  
+    <script type="module" src="firebase-config.js"></script>
+ <script type="module" src="auth.js"></script> 
+</body>
+</html>
